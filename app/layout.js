@@ -14,7 +14,7 @@ import Navbar from './components/Navbar'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='${inter.className}'>
+      <body className='${inter.className} h-full'>
         <div className='bg-primary w-full h-screen text-neutral bg-cover bg-no-repeat relative'>
         <Navbar/>
         <Header/>

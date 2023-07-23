@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+  /* color theme variables */
+  --color-primary : 27 34 35;
+  --color-secondary: 58 79 80;
+  --color-semantic: 14 246 204;
+  --color-neutral: 244 254 253;
+  }
+
+}
+:root {
+  --foreground-rgb: #ffffff;
+  --background-start-rgb: red;
+  --background-end-rgb: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+}

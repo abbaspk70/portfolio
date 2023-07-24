@@ -14,7 +14,11 @@ import Navbar from './components/Navbar'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body className='${inter.className} h-full'>
+=======
+      <body className={`'${inter.className}' h-screen overflow-hidden`}>
+>>>>>>> 4de4f3c (height)
         <div className='bg-primary w-full h-screen text-neutral bg-cover bg-no-repeat relative'>
         <Navbar/>
         <Header/>

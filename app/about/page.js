@@ -32,11 +32,11 @@ export default function About() {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary py-32 text-center xl:text-left">
+    <div className="h-screen bg-primary py-32 text-center xl:text-left">
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* col1 */}
-        <div className="flex-1 flex flex-col m-10 justify-center xl:pl-50">
-          <h1 className="text-5xl">
+        <div className="flex-1 flex flex-col justify-center xl:pl-50">
+          <h1 className="text-5xl my-3">
             Captivating <span className="text-semantic">stories </span>birth magnificent designs.
           </h1>
           <p className="mx-auto xl:max-0 mb-6 xl:mb-12">10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and all collaborated on digital products for business and consumer use.</p>
@@ -61,7 +61,7 @@ export default function About() {
             {/* about data  title */}
             {aboutData.map((item, itemIndex) => {
               return (
-                <div key={itemIndex} className={`${itemIndex === index && 'text-semantic after:w-[100%] after:bg-semantic after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} onClick={() => setIndex(itemIndex)}>
+                <div key={itemIndex} className={`${itemIndex === index && 'text-semantic after:w-[100%] after:bg-semantic/100 after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} onClick={() => setIndex(itemIndex)}>
                   {item.title}
                 </div>
               )

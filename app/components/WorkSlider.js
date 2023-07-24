@@ -26,7 +26,7 @@ export default function WorkSlider() {
         clickable: true
     }}
     modules={[Pagination, Navigation]}
-    className='h-[280px] sm:h-[480px]'
+    className='h-[240px] sm:h-[480px]'
     >
         {workSlider.slides.map((slide, index) => {
             return (

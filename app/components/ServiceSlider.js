@@ -35,7 +35,7 @@ export default function ServiceSlider() {
             clickable: true
         }}
         modules={[FreeMode, Pagination]}
-        className='h-[240px] sm:h-[340px]'
+        className='h-[180px] sm:h-[340px]'
         >
             {serviceData.map((item, index) => {
                 return (

@@ -33,10 +33,10 @@ export default function About() {
   console.log(index);
   return (
     <div className="h-screen bg-primary py-32 text-center xl:text-left">
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 xl:px-10">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 xl:px-10 overflow-auto">
         {/* col1 */}
         <div className="flex-1 flex flex-col justify-center xl:pl-50">
-          <h1 className="text-3xl xl:text-5xl my-3">
+          <h1 className="text-3xl sm:text-5xl my-3">
             Captivating <span className="text-semantic">stories </span>birth magnificent designs.
           </h1>
           <p className="mx-auto xl:max-0 mb-4 xl:mb-12">10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and all collaborated on digital products for business and consumer use.</p>
@@ -67,7 +67,7 @@ export default function About() {
               )
             })}
           </div>
-          <div className="about-description py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start overflow-auto hover:overflow-scroll h-[100%]">
+          <div className="about-description py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start overflow-auto">
             {/* about data description */}
             {aboutData[index].descrption.map((item, itemIndex) => {
               return (<div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center capitalize text-md text-slate-300" key={itemIndex}>

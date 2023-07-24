@@ -33,14 +33,14 @@ export default function About() {
   console.log(index);
   return (
     <div className="h-screen bg-primary py-32 text-center xl:text-left">
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 xl:px-10">
         {/* col1 */}
         <div className="flex-1 flex flex-col justify-center xl:pl-50">
-          <h1 className="text-5xl my-3">
+          <h1 className="text-3xl xl:text-5xl my-3">
             Captivating <span className="text-semantic">stories </span>birth magnificent designs.
           </h1>
-          <p className="mx-auto xl:max-0 mb-6 xl:mb-12">10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and all collaborated on digital products for business and consumer use.</p>
-          <div className="hidden md:flex gap-x-10 items-center justify-center xl:justify-start">
+          <p className="mx-auto xl:max-0 mb-4 xl:mb-12">10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and all collaborated on digital products for business and consumer use.</p>
+          <div className="hidden md:flex gap-x-10 items-center justify-center xl:justify-start mb-4">
             <div className="max-w-[100px]">
               <div className="text-semantic text-3xl font-bold">10+</div>
               <div>Years of Experience</div>
@@ -56,18 +56,18 @@ export default function About() {
           </div>
         </div>
         {/* col2 */}
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+        <div className="flex flex-col w-full xl:max-w-[48%] h-[50%]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {/* about data  title */}
             {aboutData.map((item, itemIndex) => {
               return (
-                <div key={itemIndex} className={`${itemIndex === index && 'text-semantic after:w-[100%] after:bg-semantic/100 after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} onClick={() => setIndex(itemIndex)}>
+                <div key={itemIndex} className={`${itemIndex === index && 'text-semantic after:w-[100%] after:bg-semantic/90 after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} onClick={() => setIndex(itemIndex)}>
                   {item.title}
                 </div>
               )
             })}
           </div>
-          <div className="about-description py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="about-description py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start overflow-auto hover:overflow-scroll h-[100%]">
             {/* about data description */}
             {aboutData[index].descrption.map((item, itemIndex) => {
               return (<div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center capitalize text-md text-slate-300" key={itemIndex}>
